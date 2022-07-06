@@ -5,7 +5,7 @@ import Login from "../logIn/Login";
 
 function Home() {
   // 헤더푸터 작업하실 때 isLogin변수를 true로 바꾸고 작업하시면 됩니다~!
-  const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
   if (isLogin) {
     return (
       <>
