@@ -1,0 +1,35 @@
+@import "../style/default.scss";
+
+
+aside.header-main{
+  border-bottom: 2px solid orangered;
+  width: 100vw;
+  height: 48px;
+  padding: 0 16px 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $medium-font;
+  .header-title{
+    // border:1px solid blue;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .btn-search{
+    background: url('../../assets/icon-search.svg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    .a11y-hidden{
+      overflow: hidden;
+      position: absolute;
+      border: 0;
+      width: 1px;
+      height: 1px;
+      clip: rect(1px, 1px, 1px, 1px);
+    }
+  }
+  
+}

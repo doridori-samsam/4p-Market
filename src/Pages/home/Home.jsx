@@ -6,6 +6,7 @@ import "./Home.scss";
 
 function Home() {
   const isLogin = localStorage.getItem("token");
+
   if (isLogin) {
     return (
       <>
