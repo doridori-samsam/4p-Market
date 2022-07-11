@@ -1,14 +1,15 @@
-import './MainHeader.scss';
-import iconSearch from '../../assets/icon-search.svg';
+import "./Header.scss";
+import SearchBtn from "../button/SearchBtn";
+
 function MainHeader() {
-  return(
-    <aside className="header-main">
-    <h1 className="header-title">감귤마켓 피드</h1>
-    <button type="button" className="btn-search">
-      <span className="a11y-hidden">검색버튼</span>
-    </button>
-    </aside>
-  )
+  return (
+    <header className="header-layout">
+      <section className="top-bar">
+        <h1 className="header-title">감귤마켓 피드</h1>
+        <SearchBtn />
+      </section>
+    </header>
+  );
 }
 
 export default MainHeader;

@@ -1,10 +1,12 @@
-import PostHeader from "../../Components/header/PostHeader";
+import UploadHeader from "../../Components/header/UploadHeader";
+import CommentFooter from "../../Components/footer/CommentFooter";
 
 function Post() {
   return (
     <>
-      <PostHeader />
+      <UploadHeader />
       <h1>게시물작성페이지</h1>
+      <CommentFooter />
     </>
   );
 }

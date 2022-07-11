@@ -1,17 +1,9 @@
 @import "../../../Components/style/default.scss";
 
-.App {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .signup-section {
   font-family: $medium-font;
   color: $subtext-color;
-  .title-eamilsignup {
+  .title-signup {
     margin-top: 30px;
     font-family: $medium-font;
     color: $text-color;
@@ -23,16 +15,22 @@
   .content-form {
     width: 322px;
     margin-top: 40px;
+    .container-username,
+    .container-accountname,
+    .container-intro {
+      margin-top: 10px;
+      margin-bottom: 16px;
+    }
     .label-email,
     .label-password {
       font-family: $medium-font;
       font-size: 12px;
       color: $subtext-color;
     }
-    input {
+    #input-email,
+    #input-password {
       width: 100%;
-      margin-top: 10px;
-      margin-bottom: 16px;
+      padding-top: 6px;
       padding-bottom: 8px;
       border: none;
       border-bottom: 1px solid $line-color;
@@ -49,6 +47,42 @@
     }
     #input-password {
       margin-bottom: 0;
+    }
+  }
+  .errorMsg {
+    display: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 6px;
+    &.email {
+      &.true {
+        color: green;
+        display: block;
+      }
+      &.false {
+        color: red;
+        display: block;
+      }
+    }
+    &.password {
+      &.true {
+        display: none;
+      }
+      &.false {
+        color: red;
+        display: block;
+      }
+    }
+    &.accountname {
+      &.true {
+        color: green;
+        display: block;
+      }
+      &.false {
+        color: red;
+        display: block;
+      }
     }
   }
 }
